@@ -1,0 +1,199 @@
+/* Golbal styles
+-------------------------------------------------- */
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+    color:#343434; Dark Grey
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.25;
+    font-family: 'Quicksand', sans-serif;
+}
+img{
+    width: 300px;
+}
+a{
+  color: #ac435cff;
+}
+a:hover{
+  color: #FFF;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 3px;
+}
+
+/* Profile section
+-------------------------------------------------- */
+
+header{
+    text-align: center;
+    background: #262621;
+    color: #FFF;
+}
+header .btnn{
+  background: #E67F0D;
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+header .btnn:hover{
+  background: rgba(191, 98, 76, 80%);
+}
+.profilepic{
+  overflow: hidden;
+  border-radius:120px 20px 120px 20px;
+}
+.content-wrapper .profilepic {
+  float: left;
+  margin-right: 20px;
+}
+h1, h2 {
+  font-family: 'Audiowide', cursive;
+  font-weight: 400;
+  margin: 10px;
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 40px;
+}
+.content-wrapper{
+  max-width: 950px;
+  width: 85%;
+  margin: 0 auto ;
+  padding: 60px 0;
+}
+p{
+  text-align: justify;
+}
+
+/* Projects
+-------------------------------------------------- */
+.projects{
+    background: #b7d8e7ff;
+    text-align: justify;
+}
+.projects a{
+}
+.projects .btn{
+  background: #1B4D9B;
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover{
+  background: rgba(27, 77, 155, 80%);
+}
+.project-item{
+  overflow: hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.project-item h3{
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+/* Education
+-------------------------------------------------- */
+
+.education{
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+.education p {
+  width: 67%;
+}
+.education-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.education-item img {
+  float: left;
+  margin-right: 20px;
+}
+.education-item h3 {
+  margin-top: 0;
+}
+.divider .last-of-item {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Contact Info
+-------------------------------------------------- */
+
+footer{
+  text-align: center;
+}
+.contact{
+    background: #f37844ff;
+}
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a{
+  padding: 15px;
+  display: inline-block;
+}
+.contact h2{
+  font-size: 35px;
+}
+.contact a{
+  color: #000501;
+  font-weight: bold;
+}
+.contact a:hover{
+  color: #fcf5c7;
+}
+
+/* Responsive Styles
+-------------------------------------------------- */
+
+@media screen and (min-width: 750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px
+  }
+  .contact-list {
+  display: flex;
+  justify-content: center;
+  }
+}
+
+@media screen and (miax-width: 749px){
+  h1{
+    font-size: 90px;
+    line-height: 0.5;
+    margin-bottom: 15px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}

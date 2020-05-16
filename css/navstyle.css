@@ -1,0 +1,30 @@
+/*-------- Top Navigation Bar -----------*/
+.topnav {
+  width: 100%;
+  overflow: auto;
+  background-color: #A2D6F9;
+  padding: 7.5px;
+}
+.topnav .list {
+  float: left;
+  overflow: hidden;
+}
+.topnav a{
+  float: right;
+  color: #422040;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
+}
+.topnav a:hover {
+  background-color: #E3D985;
+  color: black;
+}
+/* ------------------Navigationbar End----------------------- */
+@media screen and (max-width: 600px){
+  .topnav a{
+    float: none;
+    display: block;
+  }
+}
